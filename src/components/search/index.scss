@@ -1,0 +1,21 @@
+.search-modal {
+    @apply fixed w-full h-full bg-white z-50 left-0 top-0 hidden;
+    &__inner {
+        @apply h-full flex items-center justify-center;
+    }
+    &__close {
+        @apply absolute w-[50px] h-[50px] bg-[#333] text-white text-xl rounded-full top-[30px];
+        @apply flex items-center justify-center;
+
+    }
+    &__form {
+        @apply px-[15px];
+        input {
+            @apply w-full text-[34px] border-b-2 border-solid border-[#ededed] bg-transparent text-[#999] outline-none;
+            @apply lg:w-[500px];
+        }
+    }
+    &.-active {
+        @apply block;
+    }
+}

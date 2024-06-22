@@ -1,0 +1,12 @@
+.breadcrumb {
+    @apply flex justify-center gap-x-1;
+}
+
+.divider {
+    @apply w-[60px] h-1 bg-green;
+}
+
+.section-title {
+    @apply text-3xl leading-[48px] uppercase font-aldrich text-center; 
+    @apply lg:text-4xl lg:leading-[57px];
+}

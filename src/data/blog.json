@@ -1,0 +1,62 @@
+{
+    "section":"blog",
+    "content": {
+        "title": "OUR BLOG",
+        "posts": [
+            {
+                "title": "LIFE STYLE",
+                "date": "26th June, 2019",
+                "content": "KIM KARDASHIAN WEST'S NEW SHAPEWEAR LINE IS FACING",
+                "image": "img/blog/1.jpg"
+            },
+            {
+                "title": "TRAVEL",
+                "date": "26th June, 2019",
+                "content": "SHAILENE WOODLEY HAS A NEW LOOK ON 'BIG LITTLE'",
+                "image": "img/blog/2.jpg"
+            },
+            {
+                "title": "SPORT",
+                "date": "26th June, 2019",
+                "content": "WOMEN'S RAZOR BRAN IS FIGHTING 'TABOO' OF PUBIC",
+                "image": "img/blog/3.jpg"
+            },
+            {
+                "title": "LIFE STYLE",
+                "date": "26th June, 2019",
+                "content": "EMILY RATAJKOWSKI ON LEARNING TOLOVE HER ‘WEIRD’ BELLY",
+                "image": "img/blog/4.jpg"
+            },
+            {
+                "title": "FOODY",
+                "date": "26th June, 2019",
+                "content": "BRIDE SHARES STORY OF MOTHER IN LAW WEARING WEDDING",
+                "image": "img/blog/5.jpg"
+            },
+            {
+                "title": "LIFE STYLE",
+                "date": "26th June, 2019",
+                "content": "EMILY RATAJKOWSKI ON IGNORING THE COMMENTS",
+                "image": "img/blog/6.jpg"
+            },
+            {
+                "title": "FOODY",
+                "date": "26th June, 2019",
+                "content": "ALL THE JUICY DETAILS ABOUT HEIDI KLUM AND TIM NEW FASHION",
+                "image": "img/blog/7.jpg"
+            },
+            {
+                "title": "FOODY",
+                "date": "26th June, 2019",
+                "content": "3 AFFORDABLE PLACES TO SHOP FOR CUTE CLOTHES ONLINE",
+                "image": "img/blog/8.jpg"
+            },
+            {
+                "title": "LIFE STYLE",
+                "date": "26th June, 2019",
+                "content": "SEE HOW WOMEN'S FASHION IN SPORTS HAS CHANGED THE YEARS",
+                "image": "img/blog/9.jpg"
+            }
+        ]
+    }
+}

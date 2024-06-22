@@ -1,0 +1,77 @@
+{
+    "section_title": "Hello World! We Are Photographers",
+    "section_subtitle": "We always make a difference in each of our photos",
+    "section_desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitaedicta sunt explicabo. Nemo enunde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.",
+    "section_img": "img/about/about-1.jpg",
+    "section_img_1": "img/about/about-2.jpg",
+    "section_img_2": "img/about/about-3.jpg",
+    "services": [
+        {
+            "title":"WEDDING PHOTOGRAPHY",
+            "desc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+        },
+        {
+            "title":"EDIT PHOTO CREATIVE",
+            "desc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+        },
+        {
+            "title":"TAKE PHOTOS OF THE EVENT",
+            "desc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+        },
+        {
+            "title":"BLEND COLORS",
+            "desc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+        },
+        {
+            "title":"CONCEPT FOR ADVERTISING",
+            "desc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+        },
+        {
+            "title":"ART PHOTOGRAPHY",
+            "desc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+        }
+
+    ],
+    "team": [
+        {
+            "name": "FITZGERALD STANTON",
+            "position": "Manager",
+            "picture": "/img/about/team-1.png"
+        },
+        {
+            "name": "GRANT MARSHALL",
+            "position": "Photographer",
+            "picture": "/img/about/team-2.png"
+        },
+        {
+            "name": "BURNS MARKS",
+            "position": "Post-Production",
+            "picture": "/img/about/team-3.png"
+        },
+        {
+            "name": "BYRD HEWITT",
+            "position": "The Media",
+            "picture": "/img/about/team-4.png"
+        },
+        {
+            "name": "LUCILE MCCORMICK",
+            "position": "Advertisement",
+            "picture": "/img/about/team-5.png"
+        },
+        {
+            "name": "Solis Mullen",
+            "position": "Manager",
+            "picture": "/img/about/team-6.png"
+        },
+        {
+            "name": "COMPTON DEJESUS",
+            "position": "Manager",
+            "picture": "/img/about/team-7.png"
+        },
+        {
+            "name": "BRITNEY SOTO",
+            "position": "Photographer",
+            "picture": "/img/about/team-8.png"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+.footer {
+    @apply bg-secondary-50 pt-[25px] px-10 pb-[15px];
+    &__inner {
+        @apply max-lg:text-center;
+        @apply container flex flex-wrap items-center text-secondary gap-y-5 ;
+    }
+    &__about {
+        @apply w-full lg:w-1/4;
+        > a {
+            @apply inline-block;
+        }
+    }
+    &__copyright {
+        @apply w-full lg:w-1/2 text-center;
+    }
+    &__social {
+        @apply w-full lg:w-1/4;
+        > ul {
+            @apply flex justify-center gap-x-6 text-white;
+            @apply lg:justify-end;
+        }
+    }
+}

@@ -1,0 +1,111 @@
+.header {
+    $self: &;
+    @apply z-[10] top-[-50px] transition-all duration-[0.4s] py-7;
+    @apply sticky top-0 bg-white shadow-lg;
+
+    &__inner {
+        @apply container;
+        @apply flex justify-between items-center;
+    }
+    &__right {
+        @apply flex gap-x-10 items-center;
+        & .user-action {
+            @apply flex items-center gap-x-4;
+            &  > a {
+                @apply w-8 h-8 flex items-center justify-center;
+            }
+            & .menu-toggler {
+               
+                & svg:first-of-type {
+                    @apply text-2xl;
+                }
+                & svg:last-of-type {
+                    @apply hidden;
+                    @apply text-3xl;
+                }
+                #{ $self }.-menu-open & svg:first-of-type {
+                    @apply hidden;
+                }
+                #{ $self }.-menu-open & svg:last-of-type {
+                    @apply block;
+                }
+            }
+        }
+    }
+}
+
+.main-menu {
+    
+    @apply flex;
+    @apply relative duration-[0.4s] right-0;
+
+    &.-hide {
+        @media (screen(lg)) {
+            @apply opacity-0 right-[50px] invisible;
+        }
+        @media not all and (screen(sm)) {
+            @apply start-0
+        }
+    }
+    & > ul {
+        @apply flex gap-x-5;
+        & > li {
+            @apply  relative;
+            & > a {
+                @apply text-sm text-secondary uppercase px-[9px] py-[5px] font-aldrich;
+                @apply relative;
+                &::after {
+                    @apply absolute content-[''] w-0 h-[6px] left-0 bottom-2 bg-green;
+                    @apply transition-all duration-300;
+                    @apply -z-[1];
+                }
+                &.active {
+                    @apply text-primary;
+                    &::after {
+                        @apply w-full;
+                    }
+                }
+            }
+            &:hover {
+                & > a {
+                    @apply text-primary;
+                    &::after {
+                        @apply w-full;
+                    }
+                }
+            }
+        }
+    }
+
+    .sub-menu {
+        @apply absolute  w-[170px] left-0 top-full mt-[50px] shadow-3xl;
+        @apply bg-white opacity-0 invisible z-40;
+        @apply transition-all duration-300;
+        &::after {
+            @apply absolute content-[''] w-full h-[25px] left-0 top-[-25px];
+        }
+        & > ul {
+            @apply py-2.5;
+            & li {
+                @apply px-5 py-[5px] text-primary text-sm;
+            }
+        }
+    }
+
+    @media not all and (screen(sm)) {
+        @apply fixed -start-full top-[88px] bottom-0 bg-white w-[320px] p-8;
+        & > ul {
+            @apply flex-col w-full gap-y-5;
+        }
+        & .sub-menu {
+            @apply relative opacity-100 visible mt-0 top-0 max-h-0 overflow-hidden;
+        }
+    }
+}
+
+
+@media (hover: hover) {
+    .dropdown:hover .sub-menu {
+        @apply opacity-100 visible top-full mt-[25px];
+    }
+}
