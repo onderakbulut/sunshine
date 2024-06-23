@@ -1,0 +1,62 @@
+.our-team {
+    @apply pt-[100px] pb-[50px];
+    .divider {
+        @apply mx-auto my-10;
+    }
+    &__container {
+        @apply container;
+    }
+    &__inner {
+        @apply flex flex-wrap mx-auto;
+        @apply lg:w-10/12;
+    }
+
+
+    &__col {
+        @apply w-full sm:w-1/2 lg:w-4/12 xl:w-3/12;
+    }
+    &__member {
+        @apply py-[30px] px-2.5 mb-[30px] shadow-lg text-center;
+        &-picture {
+            @apply w-[160px] h-[160px] mx-auto mb-[30px] relative;
+        }
+        &-social {
+            a {
+                @apply text-sm w-[34px] h-[34px] rounded-full absolute opacity-0;
+                @apply flex items-center justify-center text-white;
+            }
+            .ms_envelope {
+                @apply bg-red-50 transition-all duration-300 ease-in-out delay-100;
+                @apply right-[calc(50%_-_17px)] top-[calc(50%_-_17px)];
+            }
+            .ms_facebook {
+                @apply bg-blue transition-all duration-300 ease-in-out delay-200;
+                @apply right-[calc(50%_-_17px)] top-[calc(50%_-_17px)];                
+            }
+            .ms_twitter {
+                @apply bg-blue-50 transition-all duration-300 ease-in-out delay-300;
+                @apply right-[calc(50%_-_17px)] top-[calc(50%_-_17px)];                
+            }
+        }
+        &:hover {
+            .ms_envelope {
+                @apply top-[15px] right-0;
+                @apply opacity-100;
+            }
+            .ms_facebook {
+                @apply -right-[17px];
+                @apply opacity-100;
+            }
+            .ms_twitter {
+                @apply top-[112px] right-0;
+                @apply opacity-100;
+            }
+        }
+        &-title {
+            @apply uppercase text-[19px] mb-[5px] font-aldrich;
+        }
+        &-desc {
+            @apply text-gray
+        }
+    }
+}

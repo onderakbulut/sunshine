@@ -1,0 +1,16 @@
+.banner {
+    @apply container;
+    &__inner {
+        @apply bg-hero bg-no-repeat bg-cover h-[300px] flex items-center justify-center text-center;   
+    }
+    &__text {
+        @apply text-white;
+        h2 {
+            @apply text-[32px] uppercase mb-4 font-aldrich;
+            @apply lg:text-[54px];
+        }
+        .-active {
+            @apply text-green;
+        }
+    }
+}
