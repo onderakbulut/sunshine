@@ -1,0 +1,24 @@
+.contact {
+    &__container {
+        @apply container mb-[70px];
+    }
+    &__inner {
+        @apply bg-contact bg-cover pt-[95px] pb-[60px] text-white px-5;
+        @apply lg:pl-[130px];
+    }
+    &__title {
+        @apply text-4xl uppercase font-aldrich mb-[15px];
+    }
+    &__desc {
+        @apply text-lg mb-4;
+    }
+    &__textbox {
+        @apply lg:max-w-[300px];
+        h3 {
+            @apply text-lg uppercase mb-2.5 font-aldrich;
+        }
+        p {
+            @apply mb-4;
+        }
+    }
+}
