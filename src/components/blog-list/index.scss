@@ -1,0 +1,35 @@
+.blog-list {
+    @apply container py-[100px];
+    &__container {
+        @apply lg:w-10/12 lg:mx-auto;
+    }
+    &__inner {
+        @apply flex flex-wrap;
+        @apply -mx-3;
+    }
+    &__item {
+        @apply px-3 text-center mb-10;
+        &-img {
+            img {
+                @apply w-full;
+            }
+        }
+        &-content {
+            h3 {
+                @apply uppercase text-green my-[15px];
+            }
+            a {
+                @apply block text-lg uppercase mb-2.5 font-aldrich leading-6;
+            }
+            span {
+                @apply text-gray text-sm;
+            }
+        }
+    }
+    .grid-sizer,
+    .blog-list__item {
+        @apply w-1/2 lg:w-1/3;
+    }
+        
+}
+
