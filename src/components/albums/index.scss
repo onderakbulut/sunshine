@@ -1,0 +1,29 @@
+.albums {
+    @apply container py-5;
+    &__inner {
+        @apply flex flex-wrap -mx-3 gap-y-6;
+    }
+    &__item {
+        @apply px-3;
+        img {
+            @apply mb-5 h-[360px] object-cover w-full;
+        }
+    }
+    &__link {
+        @apply uppercase font-aldrich text-[22px];
+        @apply relative transition-all duration-300;
+        &::after {
+            @apply absolute content-[''] w-0 h-[6px] left-0 bottom-2 bg-green;
+            @apply transition-all duration-300;
+            @apply -z-[1];
+
+        }
+        &.-active,
+        &:hover {
+            @apply pl-2;
+            &::after {
+                @apply w-full;
+            }
+        }
+    }
+}
