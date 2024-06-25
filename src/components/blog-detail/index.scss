@@ -1,0 +1,10 @@
+.blog-detail {
+    @apply py-[100px] container;
+    &__container {
+        @apply lg:w-9/12 lg:mx-auto;
+    }
+    &__inner {
+        @apply flex flex-wrap gap-y-10;
+        @apply lg:-mx-5;
+    }
+}
