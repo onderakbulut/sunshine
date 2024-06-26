@@ -1,0 +1,50 @@
+.album-detail {
+    .mySwiper {
+        img {
+            @apply h-[600px] w-full object-cover object-top;
+            @apply lg:h-[800px];
+        }
+        .swiper-button-prev, 
+        .swiper-button-next {
+            @apply text-white bg-white bg-opacity-20 rounded-[3px];
+            @apply w-11 h-11;
+            @apply flex items-center justify-center;
+            &:hover {
+                @apply bg-opacity-100 text-black;
+            }
+        }
+        .swiper-button-prev {
+            @apply left-10;
+        }
+        .swiper-button-next {
+            @apply right-10;
+        }
+        .slide__content {
+            @apply absolute w-full bottom-[100px] left-0 text-white;
+            p {
+                @apply text-lg uppercase;
+                text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);    
+            }
+            h2 {
+                @apply text-[34px] uppercase font-aldrich;
+                @apply lg:text-[50px];
+                text-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+    .myThumbs {
+        @apply py-5;
+        .swiper-slide {
+            @apply cursor-pointer;
+            &::after {
+                @apply content-[''] absolute w-full h-full left-0 top-0 border-4 border-transparent;
+            }
+            
+            &.swiper-slide-thumb-active {
+                &::after {
+                    @apply border-green;
+                }
+            }
+        }
+    }
+}
