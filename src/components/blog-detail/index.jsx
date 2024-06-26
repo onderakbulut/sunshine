@@ -17,7 +17,7 @@ function BlogDetail() {
                             26th June, 2019
                         </div>
                         <div>
-                            <img src="/img/blog/blog-big.jpg" alt="blog-detail" className='w-full mb-10' />
+                            <img src="./img/blog/blog-big.jpg" alt="blog-detail" className='w-full mb-10' />
                         </div>
                         <p className='text-gray mb-[50px] leading-7'>Floodwaters from the Mississippi River cut off the roadway from Missouri into Illinois at the states' border on May 30, 2019 in Saint Mary, Missouri. The middle-section of the country has been experiencing major flood since mid-March especially along the Missouri, Arkansas, and Mississippi Rivers. Towns along the Mississippi River have been experiencing the longest stretch of major flooding from the river in nearly a century. President Donald Trump is greeted by Queen Elizabeth II at Buckingham Palace on June 3 in London. Some claimed on Twitter that the president fistbumped the queen when he arrived, but it was just a slightly awkward handshake.</p>
                         <h4 className='mb-5 text-2xl font-aldrich'>Photos: Royals welcome Trump to Britain</h4>
