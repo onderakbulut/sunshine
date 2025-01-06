@@ -12,6 +12,9 @@
             &:hover {
                 @apply bg-opacity-100 text-black;
             }
+            &::after {
+                @apply text-sm;
+            }
         }
         .swiper-button-prev {
             @apply left-10;
