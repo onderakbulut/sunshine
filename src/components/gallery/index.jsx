@@ -4,10 +4,9 @@ import { useState, useEffect, useRef } from 'react';
 import Isotope from "isotope-layout";
 import imagesLoaded from 'imagesloaded';
 
-import "lightgallery.js/dist/css/lightgallery.css";
-import { LightgalleryProvider,LightgalleryItem } from "react-lightgallery";
-
 import { LiaSpinnerSolid } from "react-icons/lia";
+
+import Fancybox from '../fancybox';
 
 
 export default function Gallery() {
@@ -69,39 +68,33 @@ export default function Gallery() {
 
             <div className="gallery-grid" ref={isotopeRef}>
                 <div className="grid-sizer"></div>
-                {PortfolioData &&
-                    PortfolioData.map((portfolio) => (
-                        <div
-                            key={portfolio.id}
-                            className={`gallery-grid__item ${portfolio.categories
-                                .map((cat) => cat)
-                                .join(" ")}`}
-                        >
-                            <div className="gallery-grid__item-inner">
-                               {/*  <img src={portfolio.homeImage} alt="" className="w-full" /> */}
-                                <LightgalleryProvider>
-                                    <LightgalleryItem
-                                        group="any"
-                                        src={portfolio.homeImage}
-                                    >
-                                        <div className="thumbnail">
-                                            <div className="overlay">
-                                                <img
-                                                    src={portfolio.homeImage}
-                                                    alt="portfolio"
-                                                />
-                                            </div>
+                <Fancybox>
+                    {PortfolioData &&
+                        PortfolioData.map((portfolio) => (
+                            <div
+                                key={portfolio.id}
+                                className={`gallery-grid__item ${portfolio.categories
+                                    .map((cat) => cat)
+                                    .join(" ")}`}
+                            >
+                                <div className="gallery-grid__item-inner">
+                                {/*  <img src={portfolio.homeImage} alt="" className="w-full" /> */}
+                                    <div className="thumbnail" data-fancybox="gallery" data-src={portfolio.homeImage}>
+                                        <div className="overlay">
+                                            <img
+                                                src={portfolio.homeImage}
+                                                alt="portfolio"
+                                            />
                                         </div>
-                                    </LightgalleryItem>
-                                </LightgalleryProvider>
-
-                                <div className="gallery-grid__item-content">
-                                    <h3>{portfolio.title}</h3>
-                                    <p>{portfolio.categories.join(", ")}</p>
+                                    </div>
+                                    <div className="gallery-grid__item-content">
+                                        <h3>{portfolio.title}</h3>
+                                        <p>{portfolio.categories.join(", ")}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                </Fancybox>
             </div>
             <div className="gallery__loading">
                 <LiaSpinnerSolid />
